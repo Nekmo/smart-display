@@ -6,8 +6,7 @@ body {
   padding: 0;
   margin: 0; }
 
-.night {
-  background: #2f243a;
+.display {
   height: 100vh;
   display: flex;
   padding-right: 5vw;
@@ -15,11 +14,10 @@ body {
   flex-direction: column;
   align-items: center;
   max-height: 100%; }
-  .night .top-text {
+  .display .top-text {
     font-family: 'Baloo', Arial, serif;
-    color: #F4EC90;
     font-size: 2em; }
-  .night .middle-text {
+  .display .middle-text {
     display: flex;
     flex-direction: row;
     max-width: 100%;
@@ -27,16 +25,33 @@ body {
     width: 100%;
     height: 100%;
     align-self: stretch; }
-    .night .middle-text > div {
+    .display .middle-text > div {
       width: 100%;
       height: 100%; }
-  .night #icon {
-    background: url("../icons/1530382 - weather.svg");
+  .display .icon {
     background-repeat: no-repeat;
     background-size: 190% auto;
     background-position: center;
     align-self: stretch; }
-  .night .big-label {
-    color: #FFFFFF;
+  .display .big-label {
     font-size: 9em;
     font-family: 'Baloo', Arial, serif; }
+
+.night {
+  background: #2f243a; }
+  .night .top-text {
+    color: #F4EC90; }
+  .night .big-label {
+    color: #FFFFFF; }
+  .night .moon {
+    background-image: url("../icons/1530382 - weather.svg"); }
+
+.day {
+  background: #8AB0AB; }
+  .day .top-text {
+    color: #F4EC90; }
+  .day .big-label {
+    color: #231815; }
+  .day .sun {
+    background-size: 150% auto;
+    background-image: url("../icons/1530392 - weather.svg"); }

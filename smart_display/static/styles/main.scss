@@ -10,11 +10,7 @@ body {
     margin: 0;
 }
 
-
-.night {
-
-    background: #2f243a;
-
+.display {
     height: 100vh;
     //width: 100vw;
 
@@ -30,7 +26,6 @@ body {
 
     .top-text {
         font-family: 'Baloo', Arial, serif;
-        color: #F4EC90;
         font-size: 2em;
     }
 
@@ -49,8 +44,7 @@ body {
         }
     }
 
-    #icon {
-        background: url("../icons/1530382 - weather.svg");
+    .icon {
         //height: 80vh;
         //width: 80vh;
         //height: auto;
@@ -65,8 +59,41 @@ body {
     }
 
     .big-label {
-        color: #FFFFFF;
         font-size: 9em;
         font-family: 'Baloo', Arial, serif;
+    }
+
+}
+
+.night {
+    background: #2f243a;
+
+    .top-text {
+        color: #F4EC90;
+    }
+
+    .big-label {
+        color: #FFFFFF;
+    }
+
+    .moon {
+        background-image: url("../icons/1530382 - weather.svg");
+    }
+}
+
+.day {
+    background: #8AB0AB;
+
+    .top-text {
+        color: #F4EC90;
+    }
+
+    .big-label {
+        color: #231815;
+    }
+
+    .sun {
+        background-size: 150% auto;
+        background-image: url("../icons/1530392 - weather.svg");
     }
 }
