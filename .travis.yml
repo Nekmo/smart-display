@@ -11,4 +11,13 @@ before_script:
   - npm install -g @angular/cli
 script:
 - cd web
+- npm install
 - ng build --prod
+
+deploy:
+  - provider: dist angular
+    skip_cleanup: true
+    local_dir: smart_display/static/web
+    github_token: $GITHUB_TOKEN
+    on:
+      tags: true
