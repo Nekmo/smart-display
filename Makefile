@@ -84,13 +84,10 @@ dist: build-web build-sdist build-wheel
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
 
-.ONESHELL:
 build-web:
-	cd web
-	npm install
-	ng build --prod
-	cd dist/web/
-	zip -r web.zip *
+	cd web && npm install
+	cd web && ng build --prod
+	cd dist/web/ && zip -r web.zip *
 	@echo
 	@echo "Build Angular web finished"
 
