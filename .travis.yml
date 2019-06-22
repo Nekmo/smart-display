@@ -4,6 +4,7 @@ node_js:
   - "10"
 dist: trusty
 sudo: required
+cache: npm
 branches:
   only:
   - master
@@ -13,11 +14,14 @@ script:
 - cd web
 - npm install
 - ng build --prod
+- cd dist/web/
+- zip -r web.zip *
 
 deploy:
-  - provider: dist angular
+  - provider: releases
     skip_cleanup: true
     local_dir: smart_display/static/web
     github_token: $GITHUB_TOKEN
+    file: web.zip
 #    on:
 #      tags: true
