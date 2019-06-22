@@ -78,10 +78,28 @@ release: clean ## package and upload a release
 	python setup.py sdist upload
 	python setup.py bdist_wheel upload
 
-dist: clean ## builds source and wheel package
-	python setup.py sdist
-	python setup.py bdist_wheel
+dist: build-web build-sdist build-wheel
 	ls -l dist
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
+
+.ONESHELL:
+build-web:
+	cd web
+	npm install
+	ng build --prod
+	cd dist/web/
+	zip -r web.zip *
+	@echo
+	@echo "Build Angular web finished"
+
+build-sdist:
+	python setup.py sdist
+	@echo
+	@echo "Build tar.gz package finished."
+
+build-wheel:
+	python setup.py bdist_wheel
+	@echo
+	@echo "Build wheel package"

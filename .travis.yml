@@ -10,17 +10,15 @@ branches:
   - master
 before_script:
   - npm install -g @angular/cli
+  - pip install wheel
 script:
-- cd web
-- npm install
-- ng build --prod
-- cd dist/web/
-- zip -r web.zip *
+- make dist
 
 deploy:
   - provider: releases
     skip_cleanup: true
     api_key: $GITHUB_TOKEN
-    file: web.zip
+    file_glob: true
+    file: directory/*
 #    on:
 #      tags: true

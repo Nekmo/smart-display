@@ -9,6 +9,7 @@ include py2-requirements.txt
 include py3-requirements.txt
 
 recursive-include tests *
+recursive-include smart_display/static *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 
