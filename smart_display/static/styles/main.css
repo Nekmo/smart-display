@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Baloo';
+  src: url("../fonts/Baloo-Regular.ttf"); }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.night {
+  background: #2f243a;
+  height: 100vh;
+  display: flex;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%; }
+  .night .top-text {
+    font-family: 'Baloo', Arial, serif;
+    color: #F4EC90;
+    font-size: 2em; }
+  .night .middle-text {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-self: stretch; }
+    .night .middle-text > div {
+      width: 100%;
+      height: 100%; }
+  .night #icon {
+    background: url("../icons/1530382 - weather.svg");
+    background-repeat: no-repeat;
+    background-size: 190% auto;
+    background-position: center;
+    align-self: stretch; }
+  .night .big-label {
+    color: #FFFFFF;
+    font-size: 9em;
+    font-family: 'Baloo', Arial, serif; }
