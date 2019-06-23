@@ -28,7 +28,8 @@
     </div>
 </div>
 -->
-<div class="gray display">
+<!--
+<div class="gray display" (swipeleft)="swipe(idx, $event.type)">
     <div class="top-text">
         Mié. Nov 14, 15:14
     </div>
@@ -36,18 +37,21 @@
         <div class="icon temp"></div>
         <div class="big-label">
             15ºc
-            <!--
+
+
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox='0 0 30 18'>
             <text y="14" >
                 15ºc
             </text>
             </svg>
-            -->
         </div>
     </div>
     <div class="top-text">
         El tiempo ahora
     </div>
 </div>
+-->
 
-<router-outlet></router-outlet>
+<div (swipeleft)="swipe(idx, $event.type)">
+  <router-outlet></router-outlet>
+</div>

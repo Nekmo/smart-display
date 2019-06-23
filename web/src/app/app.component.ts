@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'web';
+
+  SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
+
+  swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
+    alert(action);
+  }
 }

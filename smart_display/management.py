@@ -9,4 +9,4 @@ from smart_display.web import app
 @click.command()
 # @click.argument('<arg>')
 def manage():
-    app.run('0.0.0.0', port=4242)
+    app.run('0.0.0.0', port=8282)
