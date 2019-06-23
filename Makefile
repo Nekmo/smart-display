@@ -87,6 +87,7 @@ install: clean ## install the package to the active Python's site-packages
 build-web:
 	cd web && npm install
 	cd web && ng build --prod
+	cd web/dist/web/ && cp -R * ../../../smart_display/static/
 	cd web/dist/web/ && zip -r web.zip *
 	@echo
 	@echo "Build Angular web finished"
