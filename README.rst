@@ -3,28 +3,28 @@ Smart Display
 #############
 
 
-.. image:: https://img.shields.io/travis/Nekmo/Smart Display.svg?style=flat-square&maxAge=2592000
-  :target: https://travis-ci.org/Nekmo/Smart Display
+.. image:: https://img.shields.io/travis/Nekmo/smart-display.svg?style=flat-square&maxAge=2592000
+  :target: https://travis-ci.org/Nekmo/smart-display
   :alt: Latest Travis CI build status
 
-.. image:: https://img.shields.io/pypi/v/Smart Display.svg?style=flat-square
-  :target: https://pypi.org/project/Smart Display/
+.. image:: https://img.shields.io/pypi/v/smart-display.svg?style=flat-square
+  :target: https://pypi.org/project/smart-display/
   :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/pypi/pyversions/Smart Display.svg?style=flat-square
-  :target: https://pypi.org/project/Smart Display/
+.. image:: https://img.shields.io/pypi/pyversions/smart-display.svg?style=flat-square
+  :target: https://pypi.org/project/smart-display/
   :alt: Python versions
 
-.. image:: https://img.shields.io/codeclimate/github/Nekmo/Smart Display.svg?style=flat-square
-  :target: https://codeclimate.com/github/Nekmo/Smart Display
+.. image:: https://img.shields.io/codeclimate/github/Nekmo/smart-display.svg?style=flat-square
+  :target: https://codeclimate.com/github/Nekmo/smart-display
   :alt: Code Climate
 
-.. image:: https://img.shields.io/codecov/c/github/Nekmo/Smart Display/master.svg?style=flat-square
-  :target: https://codecov.io/github/Nekmo/Smart Display
+.. image:: https://img.shields.io/codecov/c/github/Nekmo/smart-display/master.svg?style=flat-square
+  :target: https://codecov.io/github/Nekmo/smart-display
   :alt: Test coverage
 
-.. image:: https://img.shields.io/requires/github/Nekmo/Smart Display.svg?style=flat-square
-     :target: https://requires.io/github/Nekmo/Smart Display/requirements/?branch=master
+.. image:: https://img.shields.io/requires/github/Nekmo/smart-display.svg?style=flat-square
+     :target: https://requires.io/github/Nekmo/smart-display/requirements/?branch=master
      :alt: Requirements Status
 
 
@@ -35,7 +35,7 @@ To install Smart Display, run this command in your terminal:
 
 .. code-block:: console
 
-    $ sudo pip install Smart Display
+    $ sudo pip install smart-display
 
 This is the preferred method to install Smart Display, as it will always install the most recent stable release.
 

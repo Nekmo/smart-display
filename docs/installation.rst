@@ -27,11 +27,11 @@ Other releases
 --------------
 You can install other versions from Pypi using::
 
-    $ pip install Smart Display==<version>
+    $ pip install smart-display==<version>
 
 For versions that are not in Pypi (it is a development version)::
 
-    $ pip install git+https://github.com/Nekmo/Smart Display@<branch>#egg=Smart Display
+    $ pip install git+https://github.com/Nekmo/smart-display@<branch>#egg=smart-display
 
 
 
@@ -39,19 +39,19 @@ For versions that are not in Pypi (it is a development version)::
 From sources
 ------------
 
-The sources for Smart Display can be downloaded from the `Github repo`_.
+The sources for smart-display can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/Nekmo/Smart Display
+    $ git clone git://github.com/Nekmo/smart-display
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl -OL https://github.com/Nekmo/Smart Display/tarball/master
+    $ curl -OL https://github.com/Nekmo/smart-display/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -60,5 +60,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/Nekmo/Smart Display
-.. _tarball: https://github.com/Nekmo/Smart Display/tarball/master
+.. _Github repo: https://github.com/Nekmo/smart-display
+.. _tarball: https://github.com/Nekmo/smart-display/tarball/master

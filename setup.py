@@ -10,14 +10,14 @@ from setuptools import setup, find_packages
 
 AUTHOR = "Nekmo"
 EMAIL = 'contacto@nekmo.com'
-URL = 'https://github.com/Nekmo/Smart Display/'
+URL = 'https://github.com/Nekmo/smart-display/'
 
-PACKAGE_NAME = 'Smart Display'
-PACKAGE_DOWNLOAD_URL = 'https://github.com/Nekmo/Smart Display/archive/master.zip'
+PACKAGE_NAME = 'smart-display'
+PACKAGE_DOWNLOAD_URL = 'https://github.com/Nekmo/smart-display/archive/master.zip'
 MODULE = 'smart_display'
 REQUIREMENT_FILE = 'requirements.txt'
 STATUS_LEVEL = 5  # 1:Planning 2:Pre-Alpha 3:Alpha 4:Beta 5:Production/Stable 6:Mature 7:Inactive
-KEYWORDS = ['Smart Display']
+KEYWORDS = ['smart-display']
 LICENSE = 'MIT license'
 
 CLASSIFIERS = [  # https://github.com/github/choosealicense.com/tree/gh-pages/_licenses
