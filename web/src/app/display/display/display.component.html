@@ -3,19 +3,7 @@
         <!-- Mié. Nov 14, 15:14 -->
         {{ datetime|date:'E'|titlecase }} {{ datetime|date:'LLL'|slice:0:3 }} {{ datetime|date:'d, HH:mm' }}
     </div>
-    <div class="middle-text">
-        <div class="icon temp"></div>
-        <div class="big-label">
-            15ºc
-            <!--
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox='0 0 30 18'>
-            <text y="14" >
-                15ºc
-            </text>
-            </svg>
-            -->
-        </div>
-    </div>
+    <ng-content select=".middle"></ng-content>
     <div class="top-text">
         El tiempo ahora
     </div>
