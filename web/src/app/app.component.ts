@@ -10,7 +10,7 @@ export class AppComponent {
 
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
 
-  swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT) {
+  swipe(action = this.SWIPE_ACTION.RIGHT) {
     alert(action);
   }
 }

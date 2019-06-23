@@ -1,7 +1,7 @@
 <div class="gray display">
     <div class="top-text">
         <!-- Mié. Nov 14, 15:14 -->
-        {{ datetime|date:'E LLL M, HH:mm' }}
+        {{ datetime|date:'E'|titlecase }} {{ datetime|date:'LLL'|slice:0:3 }} {{ datetime|date:'d, HH:mm' }}
     </div>
     <div class="middle-text">
         <div class="icon temp"></div>
