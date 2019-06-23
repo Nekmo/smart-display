@@ -136,7 +136,11 @@ setup(
 
     install_requires=read_requirement_file(REQUIREMENT_FILE),
 
-    # entry_points={},
+    entry_points={
+        'console_scripts': [
+            'smart-display = smart_display.management:manage'
+        ]
+    },
 
     zip_safe=False,
 )
