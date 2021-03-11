@@ -20,9 +20,9 @@ jobs:
           make dist
           ls -l dist/
       - name: Release
-        uses: softprops/action-gh-release@v1  # returns 422 now. It's a temporal error?
+        uses: softprops/action-gh-release@v1
         with:
           files: dist/*
           tag_name: release-${{ github.sha }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Github probably puts it
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Github puts it
