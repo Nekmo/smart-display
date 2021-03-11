@@ -15,12 +15,14 @@ jobs:
         run: |
           npm install -g @angular/cli
           pip install wheel
-      - name: Install dependencies
+      - name: Make
         run: |
           make dist
+          ls -l dist/
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: dist/*
+          tag_name: ${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
