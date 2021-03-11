@@ -3,9 +3,9 @@ Smart Display
 #############
 
 
-.. image:: https://img.shields.io/travis/Nekmo/smart-display.svg?style=flat-square&maxAge=2592000
-  :target: https://travis-ci.org/Nekmo/smart-display
-  :alt: Latest Travis CI build status
+.. image:: https://img.shields.io/github/workflow/status/Nekmo/smart-display/Build.svg?style=flat-square&maxAge=2592000
+  :target: https://github.com/Nekmo/smart-display/actions?query=workflow%3ABuild
+  :alt: Latest Build CI build status
 
 .. image:: https://img.shields.io/pypi/v/smart-display.svg?style=flat-square
   :target: https://pypi.org/project/smart-display/
